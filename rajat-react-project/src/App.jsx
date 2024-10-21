@@ -14,8 +14,8 @@ function App() {
   <>
     {/* let [counter,setCounter2]=useState(10) */}
     <h1>counter : {counter}</h1>
-    <button onClick={addValue}>Add one</button>
-    <button onClick={removeValue}>remove one</button>
+    <button onClick={()=>{setCounter(++counter)}}>Add one</button>
+    <button onClick={()=>{setCounter(--counter)}}>remove one</button>
     </>
   )
 }
